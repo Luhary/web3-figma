@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Farine — Artisan Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__logo">La Farine</div>
+    <ul class="nav__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__cta">Order Now</button>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#menu" class="mobile-link">Menu</a></li>
+      <li><a href="#testimonials" class="mobile-link">Reviews</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero__bg-shape"></div>
+    <div class="hero__content">
+      <span class="hero__tag">Fresh Baked Daily</span>
+      <h1 class="hero__title">
+        Crafted with <em>Love</em>,<br />Baked to Perfection
+      </h1>
+      <p class="hero__subtitle">
+        Artisan breads, pastries and cakes made from the finest ingredients. Every bite tells a story of tradition and passion.
+      </p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Explore Menu</a>
+        <a href="#about" class="btn btn--ghost">Our Story</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__number" data-target="12">0</span>
+          <span class="stat__label">Years of Baking</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__number" data-target="48">0</span>
+          <span class="stat__label">Unique Recipes</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__number" data-target="3200">0</span>
+          <span class="stat__label">Happy Customers</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__circle-bg"></div>
+      <div class="hero__image-wrap">
+        <div class="hero__img hero__img--main">
+          <svg viewBox="0 0 320 360" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="breadGrad" cx="50%" cy="40%" r="55%">
+                <stop offset="0%" stop-color="#f5c87a"/>
+                <stop offset="60%" stop-color="#d4832a"/>
+                <stop offset="100%" stop-color="#9b5515"/>
+              </radialGradient>
+              <radialGradient id="crustGrad" cx="50%" cy="30%" r="60%">
+                <stop offset="0%" stop-color="#e8a84a"/>
+                <stop offset="100%" stop-color="#7a3a0d"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="160" cy="230" rx="120" ry="30" fill="#c47a2a" opacity="0.3"/>
+            <ellipse cx="160" cy="210" rx="110" ry="90" fill="url(#breadGrad)"/>
+            <ellipse cx="160" cy="175" rx="100" ry="75" fill="url(#crustGrad)"/>
+            <ellipse cx="160" cy="170" rx="85" ry="60" fill="#e8a84a" opacity="0.4"/>
+            <path d="M 100 180 Q 120 155 160 148 Q 200 155 220 180" stroke="#c47a2a" stroke-width="2.5" fill="none" opacity="0.6"/>
+            <path d="M 115 195 Q 135 172 160 165 Q 185 172 205 195" stroke="#c47a2a" stroke-width="2" fill="none" opacity="0.5"/>
+            <ellipse cx="160" cy="148" rx="30" ry="8" fill="#d4832a" opacity="0.5"/>
+            <circle cx="130" cy="185" r="4" fill="#b8601a" opacity="0.7"/>
+            <circle cx="160" cy="178" r="3.5" fill="#b8601a" opacity="0.7"/>
+            <circle cx="190" cy="185" r="4" fill="#b8601a" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="hero__badge hero__badge--left">
+          <span class="badge__icon">🌾</span>
+          <span class="badge__text">Organic<br/>Ingredients</span>
+        </div>
+        <div class="hero__badge hero__badge--right">
+          <span class="badge__icon">⭐</span>
+          <span class="badge__text">4.9<br/>Rating</span>
+        </div>
+        <div class="hero__floating-card">
+          <span>🔥 Hot from the oven!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
